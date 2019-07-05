@@ -1139,7 +1139,7 @@ class _ScalarGaussianBase(object):
         if plot_params:
             assert indices is not None
             if len(indices) > 1:
-                from util.general import rle
+                from pybasicbayes.util.general import rle
                 vals, lens = rle(np.diff(indices))
                 starts = np.concatenate(((0,),lens.cumsum()[:-1]))
                 for start, blocklen in zip(starts[vals == 1], lens[vals == 1]):

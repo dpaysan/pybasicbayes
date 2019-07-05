@@ -185,7 +185,7 @@ class Categorical(GibbsSampling, MeanField, MeanFieldSVI, MaxLikelihood, MAP):
 
     ### Mean Field SGD
 
-    def meanfield_sgdstep(self, data, weights, prob, stepsize):
+    def meanfield_sgdstep(self, data, weights, prob, stepsize, mask=None):
         data = get_masked_data(data, mask)
         self._alpha_mf = \
             (1 - stepsize) * self._alpha_mf + stepsize * (

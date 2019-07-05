@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c39cdf19-3465-47ec-8367-13708a5fce1b" name="Default Changelist" comment="" />
+    <list default="true" id="c39cdf19-3465-47ec-8367-13708a5fce1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py" beforeDir="false" afterPath="$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py" beforeDir="false" afterPath="$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +28,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pybasicbayes-develop/pybasicbayes/distributions/mixturedistribution.py">
+        <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/mixturedistribution.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+            <state relative-caret-position="286">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="26" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -37,10 +42,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../pybasicbayes-develop/pybasicbayes/distributions/multinomial.py">
+        <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="209" selection-end-line="518" />
+            <state relative-caret-position="352">
+              <caret line="56" column="59" lean-forward="true" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -49,10 +54,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pybasicbayes-develop/pybasicbayes/distributions/gaussian.py">
+        <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="306" column="21" selection-start-line="306" selection-start-column="8" selection-end-line="306" selection-end-column="21" />
+            <state relative-caret-position="-2184">
+              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -61,9 +66,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pybasicbayes-develop/pybasicbayes/util/general.py">
+        <entry file="file://$PROJECT_DIR$/pybasicbayes/util/general.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="5886">
               <caret line="328" column="30" selection-start-line="328" selection-start-column="30" selection-end-line="328" selection-end-column="30" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -91,21 +96,24 @@
       <find>expected</find>
       <find>meanfield_sgd</find>
       <find>mean</find>
+      <find>util</find>
+      <find>pybasicbayes.util</find>
+      <find>Categorical</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../pybasicbayes-develop" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pybasicbayes/util/general.py" />
         <option value="$PROJECT_DIR$/pybasicbayes/distributions/mixturedistribution.py" />
+        <option value="$PROJECT_DIR$/pybasicbayes/distributions/mixturedistribution.py" />
+        <option value="$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py" />
         <option value="$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py" />
         <option value="$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py" />
-        <option value="$PROJECT_DIR$/../pybasicbayes-develop/pybasicbayes/distributions/gaussian.py" />
-        <option value="$PROJECT_DIR$/../pybasicbayes-develop/pybasicbayes/distributions/mixturedistribution.py" />
-        <option value="$PROJECT_DIR$/../pybasicbayes-develop/pybasicbayes/distributions/multinomial.py" />
+        <option value="$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py" />
       </list>
     </option>
   </component>
@@ -121,40 +129,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="pybasicbayes-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pybasicbayes-develop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pybasicbayes-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pybasicbayes-develop" type="462c0819:PsiDirectoryNode" />
-              <item name="pybasicbayes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pybasicbayes-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pybasicbayes-develop" type="462c0819:PsiDirectoryNode" />
-              <item name="pybasicbayes" type="462c0819:PsiDirectoryNode" />
-              <item name="distributions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pybasicbayes-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pybasicbayes-develop" type="462c0819:PsiDirectoryNode" />
-              <item name="pybasicbayes" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pybasicbayes-develop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -181,18 +163,19 @@
       <option name="presentableId" value="Default" />
       <updated>1561190701038</updated>
       <workItem from="1561190703768" duration="145000" />
-      <workItem from="1561531561832" duration="7115000" />
+      <workItem from="1561531561832" duration="7842000" />
+      <workItem from="1562309887678" duration="2605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7260000" />
+    <option name="totallyTimeSpent" value="10592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="25" width="1545" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2528352" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25617078" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -219,9 +202,9 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../pybasicbayes-develop/pybasicbayes/util/general.py">
+    <entry file="file://$PROJECT_DIR$/pybasicbayes/util/general.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="5886">
           <caret line="328" column="30" selection-start-line="328" selection-start-column="30" selection-end-line="328" selection-end-column="30" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
@@ -229,30 +212,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pybasicbayes-develop/pybasicbayes/distributions/gaussian.py">
+    <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="306" column="21" selection-start-line="306" selection-start-column="8" selection-end-line="306" selection-end-column="21" />
+        <state relative-caret-position="-2184">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pybasicbayes-develop/pybasicbayes/distributions/mixturedistribution.py">
+    <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/mixturedistribution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="286">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="26" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pybasicbayes-develop/pybasicbayes/distributions/multinomial.py">
+    <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="209" selection-end-line="518" />
+        <state relative-caret-position="352">
+          <caret line="56" column="59" lean-forward="true" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
