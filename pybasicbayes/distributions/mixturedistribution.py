@@ -33,7 +33,7 @@ class DistributionMixture(GibbsSampling, MeanField, MeanFieldSVI,
     def __init__(self, distv, dist_obs_map):
 
         self.distv = distv
-        self.dist_obs_map
+        self.dist_obs_map = dist_obs_map
 
     def rvs(self, size=None):
         return np.hstack(

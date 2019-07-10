@@ -13,6 +13,7 @@ pybasicbayes/distributions/binomial.py
 pybasicbayes/distributions/gaussian.py
 pybasicbayes/distributions/geometric.py
 pybasicbayes/distributions/meta.py
+pybasicbayes/distributions/mixturedistribution.py
 pybasicbayes/distributions/multinomial.py
 pybasicbayes/distributions/negativebinomial.py
 pybasicbayes/distributions/poisson.py

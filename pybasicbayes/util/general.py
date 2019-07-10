@@ -327,12 +327,19 @@ def any_none(*args):
     return any(_ is None for _ in args)
 
 def get_masked_data(data, mask):
-    masked_data = data
+    masked_data = data.copy()
     if mask is not None:
         if isinstance(data[0], (list, np.ndarray)):
             for i in range(len(data)):
-                masked_data[i] = data[i][:, mask]
+                observations = data[i]
+                masked_observations = observations[:, mask]
+                if np.sum(mask) == 1:
+                    masked_observations = masked_observations.reshape(-1)
+                if np.sum(masked_observations.astype(np.int64) -
+                          masked_observations) == 0:
+                    masked_observations = masked_observations.astype(np.int64)
+                masked_data[i] = masked_observations
         else:
-            masked_data = data[:, mask]
+            masked_data = data
     return masked_data
 

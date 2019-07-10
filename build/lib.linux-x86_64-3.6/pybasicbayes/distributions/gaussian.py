@@ -24,6 +24,7 @@ from pybasicbayes.util.stats import sample_niw, invwishart_entropy, \
     sample_invwishart, invwishart_log_partitionfunction, \
     getdatasize, flattendata, getdatadimension, \
     combinedata, multivariate_t_loglik, gi, niw_expectedstats
+from pybasicbayes.util.general import get_masked_data
 
 weps = 1e-12
 
@@ -62,7 +63,8 @@ class _GaussianBase(object):
             else (size,self.mu.shape[0])
         return self.mu + np.random.normal(size=size).dot(self.sigma_chol.T)
 
-    def log_likelihood(self,x):
+    def log_likelihood(self,x, mask = None):
+        x = get_masked_data(x, mask)
         try:
             mu, D = self.mu, self.D
             sigma_chol = self.sigma_chol
@@ -218,7 +220,9 @@ class Gaussian(
         elif self.mu_0 is not None:
             return self.mu_0.shape[0]
 
-    def _get_statistics(self,data,D=None):
+    def _get_statistics(self,data, mask = None, D=None):
+        data = get_masked_data(data, mask)
+
         if D is None:
             D = self.D if self.D is not None else getdatadimension(data)
         out = np.zeros((D+2,D+2))
@@ -229,6 +233,7 @@ class Gaussian(
             return out
         else:
             return sum(list(map(self._get_statistics,data)),out)
+
 
     def _get_weighted_statistics(self,data,weights,D=None):
         D = getdatadimension(data) if D is None else D
@@ -264,11 +269,13 @@ class Gaussian(
 
     ### Gibbs sampling
 
-    def resample(self,data=[]):
+    def resample(self,data=[], mask = None):
+        data = get_masked_data(data, mask)
         D = len(self.mu_0)
         self.mu, self.sigma = \
             sample_niw(*self._natural_to_standard(
-                self.natural_hypparam + self._get_statistics(data,D)))
+                self.natural_hypparam + self._get_statistics(data, mask=None,
+                                                             D=D)))
         # NOTE: next lines let Gibbs sampling initialize mean
         nu = self.nu_mf if hasattr(self,'nu_mf') and self.nu_mf \
             else self.nu_0
@@ -289,20 +296,23 @@ class Gaussian(
                 self.mf_natural_hypparam))
         return self
 
-    def meanfieldupdate(self, data=None, weights=None, stats=None):
+    def meanfieldupdate(self, data=None, weights=None, stats=None, mask=None):
         assert (data is not None and weights is not None) ^ (stats is not None)
+        data = get_masked_data(data, mask)
         stats = self._stats_ensure_array(stats) if stats is not None else \
             self._get_weighted_statistics(data, weights, self.mu_0.shape[0])
         self.mf_natural_hypparam = \
             self.natural_hypparam + stats
 
-    def meanfield_sgdstep(self,data,weights,prob,stepsize):
+    def meanfield_sgdstep(self,data,weights,prob,stepsize, mask=None):
+        data = get_masked_data(data, mask)
         D = len(self.mu_0)
         self.mf_natural_hypparam = \
             (1-stepsize) * self.mf_natural_hypparam + stepsize * (
                 self.natural_hypparam
                 + 1./prob
                 * self._get_weighted_statistics(data,weights,D))
+        return self
 
     @property
     def mf_natural_hypparam(self):
@@ -351,7 +361,8 @@ class Gaussian(
 
         return p_avgengy + q_entropy
 
-    def expected_log_likelihood(self, x=None, stats=None):
+    def expected_log_likelihood(self, x=None, stats=None, mask=None):
+        data = get_masked_data(x, mask)
         assert (x is not None) ^ isinstance(stats, (tuple, np.ndarray))
 
         if x is not None:
@@ -401,7 +412,8 @@ class Gaussian(
 
     ### Collapsed
 
-    def log_marginal_likelihood(self,data):
+    def log_marginal_likelihood(self,data, mask=None):
+        data = get_masked_data(data, mask)
         n, D = getdatasize(data), len(self.mu_0)
         return self._log_partition_function(
             *self._natural_to_standard(
@@ -451,7 +463,8 @@ class Gaussian(
 
         return self
 
-    def MAP(self,data,weights=None):
+    def MAP(self,data,weights=None, mask= None):
+        mask = get_masked_data(data, mask)
         D = getdatadimension(data)
         # max likelihood with prior pseudocounts included in data
         if weights is None:
@@ -537,7 +550,8 @@ class GaussianFixedMean(_GaussianBase, GibbsSampling, MaxLikelihood):
 
     ### Max likelihood
 
-    def max_likelihood(self,data,weights=None):
+    def max_likelihood(self,data,weights=None, mask=None):
+        data = get_masked_data(data, mask)
         D = getdatadimension(data)
         if weights is None:
             n, sumsq = self._get_statistics(data)
@@ -898,15 +912,18 @@ class DiagonalGaussian(_GaussianBase,GibbsSampling,MaxLikelihood,MeanField,Tempe
         self.mu = self.mf_mu
         self.sigmas = np.where(self.mf_alphas > 1,self.mf_betas / (self.mf_alphas - 1),100000)
 
-    def meanfieldupdate(self,data,weights):
+    def meanfieldupdate(self,data,weights, mask=None):
+        data = get_masked_data(data, mask)
         self.mf_natural_hypparam = \
             self.natural_hypparam + self._get_weighted_statistics(data,weights)
 
-    def meanfield_sgdstep(self,data,weights,prob,stepsize):
+    def meanfield_sgdstep(self,data,weights,prob,stepsize, mask=None):
+        data = get_masked_data(data, mask)
         self.mf_natural_hypparam = \
             (1-stepsize) * self.mf_natural_hypparam + stepsize * (
                 self.natural_hypparam
                 + 1./prob * self._get_weighted_statistics(data,weights))
+        return self
 
     def get_vlb(self):
         natparam_diff = self.natural_hypparam - self.mf_natural_hypparam
@@ -1122,7 +1139,7 @@ class _ScalarGaussianBase(object):
         if plot_params:
             assert indices is not None
             if len(indices) > 1:
-                from util.general import rle
+                from pybasicbayes.util.general import rle
                 vals, lens = rle(np.diff(indices))
                 starts = np.concatenate(((0,),lens.cumsum()[:-1]))
                 for start, blocklen in zip(starts[vals == 1], lens[vals == 1]):
@@ -1232,7 +1249,8 @@ class ScalarGaussianNIX(_ScalarGaussianBase, GibbsSampling, Collapsed):
 
     ### Gibbs sampling
 
-    def resample(self,data=[]):
+    def resample(self, data=[], mask=None):
+        data = get_masked_data(data, mask)
         mu_n, kappa_n, sigmasq_n, nu_n = self._posterior_hypparams(*self._get_statistics(data))
         self.sigmasq = nu_n * sigmasq_n / np.random.chisquare(nu_n)
         self.mu = np.sqrt(self.sigmasq / kappa_n) * np.random.randn() + mu_n
@@ -1478,7 +1496,8 @@ class ScalarGaussianFixedvar(_ScalarGaussianBase, GibbsSampling):
         else:
             return mu_0, tausq_0
 
-    def resample(self,data=[]):
+    def resample(self,data=[], mask=None):
+        data = get_masked_data(data, mask)
         mu_n, tausq_n = self._posterior_hypparams(*self._get_statistics(data))
         self.mu = np.sqrt(tausq_n)*np.random.randn()+mu_n
         return self

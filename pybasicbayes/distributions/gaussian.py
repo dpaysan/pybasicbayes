@@ -270,7 +270,7 @@ class Gaussian(
     ### Gibbs sampling
 
     def resample(self,data=[], mask = None):
-        data = get_masked_data(mask, data)
+        data = get_masked_data(data, mask)
         D = len(self.mu_0)
         self.mu, self.sigma = \
             sample_niw(*self._natural_to_standard(
@@ -551,7 +551,7 @@ class GaussianFixedMean(_GaussianBase, GibbsSampling, MaxLikelihood):
     ### Max likelihood
 
     def max_likelihood(self,data,weights=None, mask=None):
-        data = get_masked_data(data)
+        data = get_masked_data(data, mask)
         D = getdatadimension(data)
         if weights is None:
             n, sumsq = self._get_statistics(data)
@@ -1497,7 +1497,7 @@ class ScalarGaussianFixedvar(_ScalarGaussianBase, GibbsSampling):
             return mu_0, tausq_0
 
     def resample(self,data=[], mask=None):
-        get_masked_data(data, mask)
+        data = get_masked_data(data, mask)
         mu_n, tausq_n = self._posterior_hypparams(*self._get_statistics(data))
         self.mu = np.sqrt(tausq_n)*np.random.randn()+mu_n
         return self
