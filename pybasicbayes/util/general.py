@@ -343,3 +343,9 @@ def get_masked_data(data, mask):
             masked_data = data
     return masked_data
 
+
+def get_masked_x(x, mask):
+    masked_x = x.copy()
+    if mask is not None:
+        masked_x = x[:, mask]
+    return masked_x

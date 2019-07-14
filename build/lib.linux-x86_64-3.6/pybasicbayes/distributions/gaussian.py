@@ -24,7 +24,7 @@ from pybasicbayes.util.stats import sample_niw, invwishart_entropy, \
     sample_invwishart, invwishart_log_partitionfunction, \
     getdatasize, flattendata, getdatadimension, \
     combinedata, multivariate_t_loglik, gi, niw_expectedstats
-from pybasicbayes.util.general import get_masked_data
+from pybasicbayes.util.general import get_masked_data, get_masked_x
 
 weps = 1e-12
 
@@ -64,7 +64,7 @@ class _GaussianBase(object):
         return self.mu + np.random.normal(size=size).dot(self.sigma_chol.T)
 
     def log_likelihood(self,x, mask = None):
-        x = get_masked_data(x, mask)
+        x = get_masked_x(x, mask)
         try:
             mu, D = self.mu, self.D
             sigma_chol = self.sigma_chol
@@ -362,7 +362,7 @@ class Gaussian(
         return p_avgengy + q_entropy
 
     def expected_log_likelihood(self, x=None, stats=None, mask=None):
-        data = get_masked_data(x, mask)
+        data = get_masked_x(x, mask)
         assert (x is not None) ^ isinstance(stats, (tuple, np.ndarray))
 
         if x is not None:

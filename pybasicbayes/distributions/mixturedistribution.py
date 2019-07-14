@@ -40,10 +40,11 @@ class DistributionMixture(GibbsSampling, MeanField, MeanFieldSVI,
             [self.distv[idx].rvs(size) for idx in self.dist_obs_map])
 
     def log_likelihood(self, x):
-        out = np.zeros_like(x.shape[0], dtype=np.double)
+        out = np.zeros(x.shape[0], dtype=np.double)
         for idx in np.unique(self.dist_obs_map):
             mask = self.dist_obs_map == idx
-            out += self.distv[idx].log_likelihood(x=x, mask=mask)
+            ll = self.distv[idx].log_likelihood(x=x, mask=mask)
+            out += ll
         return out
 
     ## Gibbs sampling
@@ -99,10 +100,11 @@ class DistributionMixture(GibbsSampling, MeanField, MeanFieldSVI,
         return distv_vlbs
 
     def expected_log_likelihood(self, x):
-        out = np.zeros_like(x.shape[0], dtype=np.double)
+        out = np.zeros(x.shape[0], dtype=np.double)
         for idx in np.unique(self.dist_obs_map):
             mask = self.dist_obs_map == idx
-            out += self.distv[idx].expected_log_likelihood(x=x, mask=mask)
+            ll = self.distv[idx].expected_log_likelihood(x=x, mask=mask)
+            out += ll
         return out
 
     ### Mean Field SGD

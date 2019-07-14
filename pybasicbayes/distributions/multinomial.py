@@ -15,7 +15,7 @@ from pybasicbayes.abstractions import \
     GibbsSampling, MeanField, MeanFieldSVI, MaxLikelihood, MAP
 
 from pybasicbayes.util.stats import sample_discrete
-from pybasicbayes.util.general import get_masked_data
+from pybasicbayes.util.general import get_masked_data, get_masked_x
 
 try:
     from pybasicbayes.util.cstats import sample_crp_tablecounts
@@ -97,7 +97,8 @@ class Categorical(GibbsSampling, MeanField, MeanFieldSVI, MaxLikelihood, MAP):
         return sample_discrete(self.weights, size)
 
     def log_likelihood(self, x, mask=None):
-        x = get_masked_data(x, mask)
+        x = get_masked_x(x, mask)
+        x = x.reshape(-1).astype(np.int64)
         out = np.zeros_like(x, dtype=np.double)
         nanidx = np.isnan(x)
         err = np.seterr(divide='ignore')
@@ -177,7 +178,8 @@ class Categorical(GibbsSampling, MeanField, MeanFieldSVI, MaxLikelihood, MAP):
         return p_avgengy + q_entropy
 
     def expected_log_likelihood(self, x=None, mask=None):
-        x = get_masked_data(x, mask)
+        x = get_masked_x(x, mask)
+        x = x.reshape(-1).astype(np.int64)
         # usually called when np.all(x == np.arange(self.K))
         x = x if x is not None else slice(None)
         return special.digamma(self._alpha_mf[x]) - special.digamma(
