@@ -4,11 +4,8 @@
     <list default="true" id="c39cdf19-3465-47ec-8367-13708a5fce1b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/gaussian.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/gaussian.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/multinomial.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/multinomial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/util/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/util/general.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py" beforeDir="false" afterPath="$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybasicbayes/distributions/mixturedistribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/pybasicbayes/distributions/mixturedistribution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py" beforeDir="false" afterPath="$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pybasicbayes/util/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/pybasicbayes/util/general.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,82 +28,6 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/mixturedistribution.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="181" column="41" selection-start-line="181" selection-start-column="41" selection-end-line="181" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/poisson.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="56" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pybasicbayes/util/general.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="347" column="23" lean-forward="true" selection-start-line="347" selection-start-column="23" selection-end-line="347" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -114,50 +35,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>log_lik</find>
-      <find>resample</find>
-      <find>vlb</find>
-      <find>expected_l</find>
-      <find>expected</find>
-      <find>meanfield_sgd</find>
-      <find>mean</find>
-      <find>util</find>
-      <find>pybasicbayes.util</find>
-      <find>Categorical</find>
-      <find>posterior</find>
-      <find>install</find>
-      <find>get_maske</find>
-      <find>mask</find>
-      <find>np.bin</find>
-      <find>x</find>
-      <find>get_masked_x</find>
-      <find>x=</find>
-      <find>get_masked</find>
-      <find>get_masked_data</find>
-      <find>lo</find>
-      <find>log_like</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/pybasicbayes/distributions/poisson.py" />
-        <option value="$PROJECT_DIR$/examples/pyhsmm_sandbox.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/pybasicbayes/util/general.py" />
-        <option value="$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py" />
-        <option value="$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py" />
-        <option value="$PROJECT_DIR$/pybasicbayes/distributions/mixturedistribution.py" />
-        <option value="$PROJECT_DIR$/pybasicbayes/distributions/mixturedistribution.py" />
-        <option value="$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py" />
-        <option value="$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="55" />
@@ -165,56 +44,12 @@
     <option name="width" value="773" />
     <option name="height" value="875" />
   </component>
+  <component name="ProjectId" id="1PKOO3rUeMwxjIlI9dFzcDa9Pf6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="pybasicbayes-develop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pybasicbayes-develop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pybasicbayes-develop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pybasicbayes-develop" type="462c0819:PsiDirectoryNode" />
-              <item name="pybasicbayes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pybasicbayes-develop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pybasicbayes-develop" type="462c0819:PsiDirectoryNode" />
-              <item name="pybasicbayes" type="462c0819:PsiDirectoryNode" />
-              <item name="distributions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pybasicbayes-develop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="pybasicbayes-develop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6.1 (/usr/share/miniconda3/bin/python3.6) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="pybasicbayes-develop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6.1 (/usr/share/miniconda3/bin/python3.6) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hsmmlearn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pyhsmm-develop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -244,7 +79,11 @@
       <workItem from="1561531561832" duration="7842000" />
       <workItem from="1562309887678" duration="12522000" />
       <workItem from="1562605971282" duration="4583000" />
-      <workItem from="1563116741893" duration="3710000" />
+      <workItem from="1563116741893" duration="4341000" />
+      <workItem from="1565620433417" duration="228000" />
+      <workItem from="1565709994658" duration="214000" />
+      <workItem from="1565780518718" duration="415000" />
+      <workItem from="1565781001788" duration="3459000" />
     </task>
     <task id="LOCAL-00001" summary="implemented mixture(categorical and gaussian) distribution">
       <created>1562741301611</created>
@@ -253,62 +92,51 @@
       <option name="project" value="LOCAL" />
       <updated>1562741301611</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implementation mixture Gibbs sampling finished">
+      <created>1563126611675</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563126611675</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28802000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="55" y="25" width="1545" height="875" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26284188" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297587" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50033355" side_tool="true" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49966645" visible="true" weight="0.3297587" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3297587" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24949966" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32955304" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32955304" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implemented mixture(categorical and gaussian) distribution" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented mixture(categorical and gaussian) distribution" />
+    <MESSAGE value="implementation mixture Gibbs sampling finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementation mixture Gibbs sampling finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pybasicbayes/util/general.py</url>
-          <line>337</line>
+          <line>339</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pybasicbayes/util/general.py</url>
-          <line>338</line>
+          <line>340</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pybasicbayes/util/general.py</url>
-          <line>334</line>
+          <line>336</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -323,90 +151,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examples/pyhsmm_sandbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="14" selection-start-line="14" selection-end-line="19" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <folding>
-              <element signature="e#0#18#0" expanded="true" />
-              <element signature="e#0#11#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pybasicbayes.egg-info/SOURCES.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/poisson.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="56" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pybasicbayes/util/general.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="347" column="23" lean-forward="true" selection-start-line="347" selection-start-column="23" selection-end-line="347" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/gaussian.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/mixturedistribution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pybasicbayes/distributions/multinomial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="181" column="41" selection-start-line="181" selection-start-column="41" selection-end-line="181" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

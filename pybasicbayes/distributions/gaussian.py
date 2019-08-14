@@ -442,7 +442,8 @@ class Gaussian(
 
     ### Max likelihood
 
-    def max_likelihood(self,data,weights=None):
+    def max_likelihood(self,data,weights=None, mask=None):
+        data = get_masked_data(data, mask)
         D = getdatadimension(data)
         if weights is None:
             statmat = self._get_statistics(data,D)
@@ -464,7 +465,7 @@ class Gaussian(
         return self
 
     def MAP(self,data,weights=None, mask= None):
-        mask = get_masked_data(data, mask)
+        data = get_masked_data(data, mask)
         D = getdatadimension(data)
         # max likelihood with prior pseudocounts included in data
         if weights is None:

@@ -327,6 +327,8 @@ def any_none(*args):
     return any(_ is None for _ in args)
 
 def get_masked_data(data, mask):
+    if data is None:
+        return data
     masked_data = data.copy()
     if mask is not None:
         if isinstance(data[0], (list, np.ndarray)):
@@ -345,6 +347,8 @@ def get_masked_data(data, mask):
 
 
 def get_masked_x(x, mask):
+    if x is None:
+        return x
     masked_x = x.copy()
     if mask is not None:
         masked_x = x[:, mask]
