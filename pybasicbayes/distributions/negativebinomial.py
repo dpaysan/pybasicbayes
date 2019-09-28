@@ -11,7 +11,7 @@ __all__ = [
 import numpy as np
 from numpy import newaxis as na
 import scipy.special as special
-from scipy.misc import logsumexp
+from scipy.special import logsumexp
 from warnings import warn
 
 from pybasicbayes.abstractions import Distribution, GibbsSampling, \
@@ -565,7 +565,7 @@ class NegativeBinomialIntegerR(NegativeBinomialFixedR, GibbsSampling, MaxLikelih
             ps = self._max_likelihood_ps(n,tot,rs)
 
             # TODO TODO this isn't right for weighted data: do weighted sums
-            if isinstance(data,np.ndarray):
+            if isinstance(data, np.ndarray):
                 likelihoods = np.array([self.log_likelihood(data,r=r,p=p).sum()
                                             for r,p in zip(rs,ps)])
             else:

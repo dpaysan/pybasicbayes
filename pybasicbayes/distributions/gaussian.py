@@ -446,7 +446,7 @@ class Gaussian(
         data = get_masked_data(data, mask)
         D = getdatadimension(data)
         if weights is None:
-            statmat = self._get_statistics(data,D)
+            statmat = self._get_statistics(data=data,mask=None, D=D)
         else:
             statmat = self._get_weighted_statistics(data,weights,D)
 
@@ -466,10 +466,11 @@ class Gaussian(
 
     def MAP(self,data,weights=None, mask= None):
         data = get_masked_data(data, mask)
+        mask = None
         D = getdatadimension(data)
         # max likelihood with prior pseudocounts included in data
         if weights is None:
-            statmat = self._get_statistics(data)
+            statmat = self._get_statistics(data, mask=None, D=D)
         else:
             statmat = self._get_weighted_statistics(data,weights)
         statmat += self.natural_hypparam
@@ -551,8 +552,11 @@ class GaussianFixedMean(_GaussianBase, GibbsSampling, MaxLikelihood):
 
     ### Max likelihood
 
-    def max_likelihood(self,data,weights=None, mask=None):
-        data = get_masked_data(data, mask)
+    def max_likelihood(self, data, weights=None, mask=None):
+        # if len(mask) == data.shape[1]:
+        #     data = get_masked_data(data, mask)
+        # else:
+        #     print("[WARNING] \t Continue with unmasked data.")
         D = getdatadimension(data)
         if weights is None:
             n, sumsq = self._get_statistics(data)
