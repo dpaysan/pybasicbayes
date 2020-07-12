@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="caf71299-4e15-45ad-b582-fe90f8aadc3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/pybasicbayes-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/abstractions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/binomial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/gaussian.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/geometric.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/meta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/multinomial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/negativebinomial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/poisson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/regression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/distributions/uniform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/models/factor_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/models/mixture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/models/parallel_mixture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/testing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/testing/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/util/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/util/cstats.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/util/cyutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/util/general.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/util/plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/util/profiling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/util/stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/util/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.linux-x86_64-3.6/pybasicbayes/util/text.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.linux-x86_64-3.6/pybasicbayes/util/cstats.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/pyhsmm_sandbox.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pybasicbayes.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pybasicbayes.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pybasicbayes.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pybasicbayes.egg-info/requires.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pybasicbayes.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pybasicbayes/distributions/mixturedistribution.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1eaGlI74BwFwGAwYTk8ihTd9y4G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="caf71299-4e15-45ad-b582-fe90f8aadc3a" name="Default Changelist" comment="" />
+      <created>1594552439949</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594552439949</updated>
+      <workItem from="1594552441313" duration="323000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
